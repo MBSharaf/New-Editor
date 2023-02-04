@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #454545;
+    color: #f1faee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  .logo span{
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .logo span:hover{
+    Color: #e76f51;
+}
+
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-left: -10px;
+    padding-right: 40px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #e76f51;
+    font-weight: 600;
+  }
+
+  nav ul li a:hover{
+    Color: #f1faee;
+}
+
+  
+.Code-Editor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #e76f51;
+    margin-top: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+}
+
+.left, .right{
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+TExtarea{
+    width: 100%;
+    height: 25%;
+    background: #264653;
+    color: #e76f51;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+
+iframe{
+    width: 100%;
+    height: 84%;
+    background: #f1faee;
+    border: 0;
+    outline: 0;
+}
+
+label i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    background: #023047;
+    height: 30px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a{
+    margin: 10px;
+    padding: 0px 20px 0px 20px;
+    margin-top: -30px;
+    font-size: 20px;
+    Color: #f1faee;
+}
+
+.social-icons a:hover{
+    Color: #e76f51;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .logo{
+        padding-right: 10px;
+    }
+    .logo span{
+        font-size: 25px;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-left: -10px;
+        padding-right: 20px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      
+      .social-icons a{
+        margin: 10px;
+        padding: 0px 10px 0px 10px;
+        margin-top: -30px;
+        font-size: 20px;
+        Color: #f1faee;
+    }
+    
+    .social-icons a:hover{
+        Color: #e76f51;
+    }
+}

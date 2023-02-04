@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="sce.css">
+    <title>SCE | Code Editor</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+          <span class="auto-type"></span>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tourist">Projects</a></li>
+          <li><a href="#cities">Review</a></li>
+          <li><a href="#about">Contact</a></li>
+          <li><a href="index.html">LogOut</a></li>
+        </ul>
+      </nav>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+
+  <script>
+      var typed = new Typed(".auto-type", {
+          strings: ["SCE"],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true,
+      })
+
+  </script> 
+  
+      
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+            <TExtarea id="html-code" onkeyup="run()"></TExtarea>
+
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <TExtarea id="css-code" onkeyup="run()"></TExtarea>
+
+            <label><i class="fa-brands fa-js"></i>JavaScript</label>
+            <TExtarea id="js-code" onkeyup="run()"></TExtarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-brands fa-google-play"></i>OutPut</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function run(){
+            let htmlCode = document.getElementById("html-code").value;
+            let cssCode = document.getElementById("css-code").value;
+            let jsCode = document.getElementById("js-code").value;
+            let output = document.getElementById("output");
+
+            output.contentDocument.body.innerHTML = htmlCode +"<style>" +cssCode +"</style>";
+            output.contentWindow.eval(jsCode);
+
+        }
+    </script>
+
+<div class="social-icons">
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-github"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  
+</body>
+</html>

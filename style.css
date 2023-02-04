@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+  background: #264653;
+  color: #f1faee;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image img{
+  width: 50%;
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  z-index: -1;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    width: 400px;
+    height: 500px;
+    background: #f1faee;
+    color: #e76f51;
+    margin-top: 120px;
+    margin-left: 250px;
+    border-radius: 15px;
+   
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+   
+  }
+
+  .login-container h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .input-container {
+    position: relative;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .input-container i {
+    position: absolute;
+    top: 40%;
+    left: -10px;
+    transform: translateY(-50%);
+    background: #e76f51;
+    color: #f1faee;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .input-container .password-icon{
+    position: absolute;
+    top: 40%;
+    left: 220px;
+  }
+  
+  
+  input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 1px solid #e76f51;
+  }
+
+  input[type="password"] {
+    padding: 20px 10px;
+  }
+  
+  button[type="submit"] {
+    width: 200px;
+    height: 30px;
+    background-color: #264653;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  
+  a {
+    color: #1da1f2;
+    text-decoration: none;
+  }
+  
+
+  .social-icons{
+    padding: 30px;
+  }
+  .social-icons a{
+    font-size: 20px;
+    margin: 2px;
+    color: #264653;
+    transition: 0.5s ease;
+  }
+
+  .social-icons a:hover{
+    color: #e76f51;
+    transform: scale(1.1);
+  }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: f1faee;
+    }
+
+    .image{
+      opacity: 0;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      width: 330px;
+      height: 500px;
+      background: #f1faee;
+      color: #e76f51;
+      margin-top: 120px;
+      margin-left: 20px;
+      border-radius: 15px;
+     
+    }
+    
+    .social-icons a{
+      font-size: 20px;
+      margin: 1px;
+      color: #264653;
+    }
+
+
+  }
+  
